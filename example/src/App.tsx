@@ -1,8 +1,9 @@
 import {ExampleComponent} from 'react-prism-wrapper';
-import 'react-prism-wrapper/dist/index.css';
+
+import code from './example-jsx-string';
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />;
+  return <ExampleComponent language={'jsx'} code={code} />;
 };
 
 export default App;
