@@ -1,10 +1,25 @@
-import {ReactElement} from 'react';
-import styles from './styles.module.css';
+import {Key, ReactNode} from 'react';
+import {NormalizedToken, NormalizedTokens} from './normalizeTokens';
 
-interface Props {
-  text: string;
+export type {NormalizedToken, NormalizedTokens};
+
+export interface TagProps {
+  className: string;
 }
 
-export const ExampleComponent = ({text}: Props): ReactElement => {
-  return <div className={styles.test}>Example Component: {text}</div>;
-};
+export interface LineProps extends TagProps {
+  key: Key;
+}
+
+export interface TokenProps extends LineProps {
+  children: ReactNode;
+}
+
+export interface ChildProps {
+  getCodeProps: (lang: string) => TagProps;
+  getLineProps: (tokens: NormalizedTokens, i: number) => LineProps;
+  getTokenProps: (token: NormalizedToken, key: number) => TokenProps;
+  lines: NormalizedTokens[];
+}
+
+export * from './Highlight';

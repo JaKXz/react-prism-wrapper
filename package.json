@@ -4,10 +4,11 @@
   "description": "Quickly degit a working react component template.",
   "author": "JaKXz",
   "license": "MIT",
-  "repository": "JaKXz/react-prism-wrapper",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
+  "types": "dist/index.d.ts",
   "source": "src/index.tsx",
+  "repository": "JaKXz/react-prism-wrapper",
   "engines": {
     "node": ">=14"
   },
