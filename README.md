@@ -1,14 +1,14 @@
-# react-component-template
+# react-prism-wrapper
 
 > Quickly degit a modern [for now] react component template.
-> Inspired by svelte-component-template and create-react-library.
+> Inspired by svelte-prism-wrapper and create-react-library.
 
 ## Getting started
 
 > Replace `yarn` commands with whatever the equivalent is in your package manager.
 
 ```bash
-npx degit jakxz/react-component-template <project-name>
+npx degit jakxz/react-prism-wrapper <project-name>
 
 cd project-name
 

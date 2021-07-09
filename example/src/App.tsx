@@ -1,5 +1,5 @@
-import { ExampleComponent } from "react-component-template";
-import "react-component-template/dist/index.css";
+import {ExampleComponent} from 'react-prism-wrapper';
+import 'react-prism-wrapper/dist/index.css';
 
 const App = () => {
   return <ExampleComponent text="Create React Library Example 😄" />;
